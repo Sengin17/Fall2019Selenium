@@ -40,6 +40,7 @@ public class BasicNavigation {
         // go to another website within the same window
         driver.navigate().to("http://amazon.com");
 
+
         if (driver.getTitle().toLowerCase().contains("amazon")){
             System.out.println("Test Passed!");
         }else {
@@ -48,15 +49,24 @@ public class BasicNavigation {
 
         // comeback to google
         driver.navigate().back();
+        Thread.sleep(3000); // for demo, wait 3 seconds
 
         // checking if page title is equal to Google
         // .getTitle() - returns page title
         verifyEquals(driver.getTitle(), "Google");
         // move forward in the browser history
+        // again , going to amazon
         driver.navigate().forward();
+        Thread.sleep(3000); // for demo, wait 3 seconds
+
         System.out.println("Title : " + driver.getTitle());
         // driver.getTitle() - returns page title of the the page that is currently opened
+        // to get URL
+        System.out.println("URL : " + driver.getCurrentUrl());
+        driver.navigate().refresh(); //to reload page
+        Thread.sleep(3000); // for demo, wait 3 seconds
 
+      //  driver.navigate().to() = driver.get();
         // must be at the end
         driver.close(); // to close browser
         // browser cannot close itself
