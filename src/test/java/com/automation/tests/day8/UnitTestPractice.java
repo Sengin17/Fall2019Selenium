@@ -15,6 +15,7 @@ public class UnitTestPractice {
         verifyEquals(expected, actual);
     }
     //annotation
+    //description - is not working for junit, make sure that you use testng
     @Test(description = "Verify if method can reverse a string")
     public void test(){
       //  String expected = "elppa";
