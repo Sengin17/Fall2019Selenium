@@ -24,6 +24,11 @@ public class ConfigurationReader {
             throw new RuntimeException("Failed to load properties file!");
         }
     }
+    /**
+     * This method returns property value from configuration.properties file
+     * @param keyName property name
+     * @return property value
+     */
     public static String getProperty(String keyName) {
         return configFile.getProperty(keyName);
     }
