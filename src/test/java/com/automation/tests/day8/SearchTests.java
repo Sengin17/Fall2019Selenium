@@ -30,6 +30,7 @@ public class SearchTests {
                 //verify that every search result contains java
                 //is some of the search results
                 //doesn't contain java word, it will fail the test
+                // basliklar java iceriyor mu ? ona bakiyor
                 Assert.assertTrue(var.toLowerCase().contains("java"));
                 System.out.println(var.toLowerCase());
                 System.out.println();
