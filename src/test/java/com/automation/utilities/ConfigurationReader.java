@@ -7,6 +7,8 @@ public class ConfigurationReader {
 
     private static Properties configFile;
 
+    // //ConfigurationReader class ==> we need this class to load and to use configuration file
+    ////to get configuration.properties => call getProperty method
     static {
         try {
             // location of properties file
