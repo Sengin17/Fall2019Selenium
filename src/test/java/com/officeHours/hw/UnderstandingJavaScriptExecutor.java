@@ -79,7 +79,6 @@ public class UnderstandingJavaScriptExecutor {
         WebDriver driver = BrowserFactory.getDriver("chrome");
         driver.get("https://www.etsy.com/");
         JavascriptExecutor js = (JavascriptExecutor)driver;
-        String scroolText = js.executeScript("document.getElementById('element id').scrollIntoView()").toString();
-        System.out.println(scroolText);
+        js.executeScript("document.getElementById('email-list-signup-email-input').scrollIntoView();");
     }
 }
